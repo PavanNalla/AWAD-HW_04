@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<center>
+
+
+
+  <form method="post">
+
+      {{form.hidden_tag()}}
+      <br><h1>Yellow Pages</h1><br>
+      <h5>Welcome to the yellow pages!</h5><br><br>
+      {{form.companyname.label}} {{form.companyname}}&nbsp;&nbsp;&nbsp;
+      {{form.phone.label}} {{form.phone}}<br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      {{form.email.label}} {{form.email}}
+      {{form.address.label}} {{form.address}}<br><br><br>
+      <input type="submit" name="submit" value="add above record"><br><br>
+      <input type="submit" name="submit" value="show all records"><br><br>
+ </form>
+
+
+</center>
+{% endblock %}
+
+<!-- References:
+Lecture by Dr. Unan, week 7: https://uab.instructure.com/courses/1576210/pages/week-07?module_item_id=16803884
+https://www.digitalocean.com/community/tutorials/how-to-use-web-forms-in-a-flask-application
+https://pythonbasics.org/flask-http-methods/
+Previous submissions to Dr. Unan:
+My previous work, Lab_07 submissions: https://uab.instructure.com/courses/1576210/assignments/6666436/submissions/6041152
+Lab_08: https://uab.instructure.com/courses/1576210/assignments/6668682/submissions/6041152
+HW_03: https://uab.instructure.com/courses/1576210/assignments/6664252/submissions/6041152
+
+
+
+
+ -->
